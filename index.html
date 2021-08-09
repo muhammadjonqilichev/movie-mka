@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body style="background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 26%, rgba(253,29,29,1) 73%, rgba(252,176,69,1) 100%);margin-top: 30px; padding-bottom: 30px;">
+  
+  
+  <section class="movie">
+    <div class="container">
+      <h1 class="movie__title">Movies</h1>
+      <form class="form" id="form">
+        <label>
+          Qidiruv:
+          <input class="movie__search" placeholder="search..." id="search_movie" type="text" name="seach_movie">
+        </label>
+
+        
+        <label>
+          Janr:
+          <select class="movie__genre" name="select" id="select">
+            <option value="All">All</option>
+          </select>
+        </label>
+        <button class="movie__btn" type="submit">Search</button>
+      </form>
+      
+      <ul class="movie__list">
+        <li class="movie__item">
+          <img class="movie__img" src="http://picsum.photos/150/200" alt="img" width="150" height="200">
+          <h2 class="movie__item-title">Shazam</h2>
+          <time class="movie__list-time" datetime="2020-15-20">2020-15-20</time>
+          <p class=""></p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <script src="./js/films.js"></script>
+  <script src="./js/utils.js"></script>
+  <script src="./js/search.js"></script>
+</body>
+</html>
