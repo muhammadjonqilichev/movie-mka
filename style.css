@@ -112,11 +112,31 @@ h4{
     justify-content: space-between;
 }
 blockquote{
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 15px;
+    border-radius: 15px;
+    width: 260px;
+    background-color: rgba(27, 27, 27, .7);
+    height: 600px;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 200px;
+    left:-300px;
     margin: 0;
-    letter-spacing:1px;
-    line-height: 15px;
-    font-family: 'MonteCarlo', cursive;
-    margin-top: 10px;
+    letter-spacing:1.5px;
+    margin-bottom: 20px;    
+    line-height: 25px;
+    font-family: 'Josefin Sans', sans-serif;
+    z-index: 1;
+    font-size: 18px;
+    transition: 1.5s ease all;
+    box-shadow: 0px -12px 70px 2px rgb(58, 61, 58) inset;
+    border: 2px solid rgb(44, 42, 42);
+
+}
+li:hover blockquote{
+    left: -20px;
 }
 .date{
     font-family: 'Josefin Sans', sans-serif;

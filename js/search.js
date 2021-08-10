@@ -40,6 +40,7 @@ function render(arrFilm, element) {
         let newHeading = CreateDom('h2')
         let newTime = CreateDom('time')
         let newGenreLi = CreateDom('p')
+        let blockQuote = document.createElement('blockquote')
         
         
         //creating attributes 
@@ -56,12 +57,14 @@ function render(arrFilm, element) {
         newHeading.textContent = film.title
         newTime.textContent = normalizeDate(film.release_date)
         newGenreLi.textContent = film.genres
+        blockQuote.textContent = film.overview
         
         //appendChilds
         newLi.appendChild(newImg)
         newLi.appendChild(newHeading)
         newLi.appendChild(newTime)
         newLi.appendChild(newGenreLi)
+        newLi.appendChild(blockQuote)
         movieList.appendChild(newLi)
     });
 }
